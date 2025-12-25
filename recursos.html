@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Úteis e Legislação - Hermont Guindastes</title>
+    <meta name="description" content="Acesse normas regulamentadoras (NR11, NR12), links do DNIT, CREA-MA e Porto do Itaqui. Central de recursos para engenharia de movimentação.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hermont: { blue: '#003399', dark: '#002266', red: '#cc0000', gray: '#f3f4f6' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header Simplificado (com botão de voltar) -->
+    <header class="bg-hermont-blue text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 font-bold hover:text-gray-200 transition">
+                <i class="ph-bold ph-arrow-left"></i> Voltar ao Início
+            </a>
+            <img src="Hermont.png" alt="Hermont Logo" class="h-10 bg-white rounded p-1">
+        </div>
+    </header>
+
+    <!-- Título da Página -->
+    <section class="bg-hermont-dark text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Central de Recursos e Legislação</h1>
+            <p class="text-blue-100 max-w-2xl mx-auto">Reunimos os principais links, normas e portais úteis para o planejamento da sua operação de içamento e transporte.</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        
+        <!-- Grupo 1: Segurança e Normas -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-hermont-blue mb-6 flex items-center gap-2">
+                <i class="ph-fill ph-shield-check text-hermont-red"></i> Segurança e Normas (NRs)
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card -->
+                <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-11-atualizada-2016.pdf" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
+                    <div class="text-hermont-red font-bold text-lg mb-2 group-hover:underline">NR 11 - Gov.br <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
+                    <p class="text-gray-600 text-sm">Norma Regulamentadora para Transporte, Movimentação, Armazenagem e Manuseio de Materiais.</p>
+                </a>
+                <!-- Card -->
+                <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-12-seguranca-no-trabalho-em-maquinas-e-equipamentos" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
+                    <div class="text-hermont-red font-bold text-lg mb-2 group-hover:underline">NR 12 - Gov.br <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
+                    <p class="text-gray-600 text-sm">Segurança no Trabalho em Máquinas e Equipamentos. Essencial para operações com guindastes.</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Grupo 2: Logística e Autorizações -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-hermont-blue mb-6 flex items-center gap-2">
+                <i class="ph-fill ph-truck text-hermont-red"></i> Logística e Trânsito (AET)
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="https://siaet.dnit.gov.br/" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
+                    <div class="text-hermont-blue font-bold text-lg mb-2 group-hover:underline">SIAET - DNIT <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
+                    <p class="text-gray-600 text-sm">Sistema de Gerenciamento de Autorização Especial de Trânsito para cargas indivisíveis e excedentes.</p>
+                </a>
+                 <a href="https://www.portodoitaqui.ma.gov.br/" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
+                    <div class="text-hermont-blue font-bold text-lg mb-2 group-hover:underline">Porto do Itaqui (EMAP) <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
+                    <p class="text-gray-600 text-sm">Portal oficial do Porto do Itaqui. Informações sobre atracações e normas portuárias.</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Grupo 3: Institucional Regional -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-hermont-blue mb-6 flex items-center gap-2">
+                <i class="ph-fill ph-buildings text-hermont-red"></i> Órgãos e Associações
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="https://www.creama.org.br/" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
+                    <div class="text-gray-800 font-bold text-lg mb-2 group-hover:underline">CREA - MA <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
+                    <p class="text-gray-600 text-sm">Conselho Regional de Engenharia e Agronomia do Maranhão.</p>
+                </a>
+                <a href="https://www.sinduscon-ma.com.br/" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
+                    <div class="text-gray-800 font-bold text-lg mb-2 group-hover:underline">SINDUSCON - MA <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
+                    <p class="text-gray-600 text-sm">Sindicato da Indústria da Construção Civil do Estado do Maranhão.</p>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+        <div class="container mx-auto px-4">
+            <p>Os links externos são de responsabilidade de seus respectivos proprietários.</p>
+            <p class="mt-2">&copy; 2025 Hermont Transportes.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

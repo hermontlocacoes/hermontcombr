@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dúvidas Frequentes - Locação de Munck e Guindastes | Hermont</title>
+    <meta name="description" content="Tire suas dúvidas sobre aluguel de Munck e Guindastes. Saiba como escolher o equipamento ideal, requisitos de segurança e como economizar na sua locação.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hermont: { blue: '#003399', dark: '#002266', red: '#cc0000', gray: '#f3f4f6' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        /* Estilo para suavizar a abertura das perguntas */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: sweep .5s ease-in-out; }
+        @keyframes sweep { 0% {opacity: 0; transform: translateY(-10px)} 100% {opacity: 1; transform: translateY(0)} }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-hermont-blue text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 font-bold hover:text-gray-200 transition">
+                <i class="ph-bold ph-arrow-left"></i> Voltar ao Início
+            </a>
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/5598984096534" class="hidden md:flex bg-hermont-red hover:bg-white hover:text-hermont-red text-white px-4 py-1 rounded-full text-sm font-bold transition">
+                    (98) 98409-6534
+                </a>
+                <img src="Hermont.png" alt="Hermont Logo" class="h-10 bg-white rounded p-1">
+            </div>
+        </div>
+    </header>
+
+    <!-- Título Principal -->
+    <section class="bg-hermont-dark text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Perguntas Frequentes</h1>
+            <p class="text-blue-100 max-w-2xl mx-auto text-lg">
+                Antes de alugar, entenda como escolher o equipamento certo para sua obra e garantir economia e segurança.
+            </p>
+        </div>
+    </section>
+
+    <!-- Conteúdo FAQ -->
+    <main class="container mx-auto px-4 py-12 max-w-4xl flex-grow">
+        
+        <!-- Seção 1: Escolha do Equipamento -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-hermont-blue mb-6 flex items-center gap-2 border-b pb-2 border-gray-200">
+                <i class="ph-fill ph-crane-tower text-hermont-red"></i> Escolhendo o Equipamento Ideal
+            </h2>
+            
+            <!-- Pergunta 1 -->
+            <details class="bg-white border border-gray-200 rounded-lg mb-4 shadow-sm group">
+                <summary class="flex justify-between items-center p-6 cursor-pointer bg-white rounded-lg group-open:bg-gray-50 transition font-bold text-lg text-gray-800">
+                    Qual a diferença entre Caminhão Munck e Guindaste?
+                    <span class="text-hermont-red group-open:rotate-180 transition transform"><i class="ph-bold ph-caret-down"></i></span>
+                </summary>
+                <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-4">
+                    <p class="mb-3">A principal diferença está na capacidade e na aplicação:</p>
+                    <ul class="list-disc pl-5 space-y-2 mb-4">
+                        <li><strong>Caminhão Munck (Guindauto):</strong> É um equipamento montado sobre o chassi de um caminhão convencional. É ideal para cargas de médio porte, transporte de máquinas, postes e contêineres, unindo içamento e transporte no mesmo veículo.</li>
+                        <li><strong>Guindaste Rodoviário:</strong> Projetado exclusivamente para içamento. Possui capacidades muito maiores (30t, 70t, 200t+) e alcança alturas elevadas que o Munck não atinge. É usado em montagens industriais pesadas.</li>
+                    </ul>
+                    <p class="text-sm bg-blue-50 p-3 rounded border-l-4 border-hermont-blue">
+                        <strong>Dica Hermont:</strong> Para saber mais sobre a tecnologia dos equipamentos, consulte o guia da <a href="https://www.palfinger.com/pt-br" target="_blank" class="text-hermont-blue underline font-bold hover:text-hermont-red">Palfinger</a>, referência mundial em guindautos.
+                    </p>
+                </div>
+            </details>
+
+            <!-- Pergunta 2 -->
+            <details class="bg-white border border-gray-200 rounded-lg mb-4 shadow-sm group">
+                <summary class="flex justify-between items-center p-6 cursor-pointer bg-white rounded-lg group-open:bg-gray-50 transition font-bold text-lg text-gray-800">
+                    Como saber qual o tamanho do guindaste que preciso?
+                    <span class="text-hermont-red group-open:rotate-180 transition transform"><i class="ph-bold ph-caret-down"></i></span>
+                </summary>
+                <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-4">
+                    <p class="mb-4">Não basta saber apenas o peso da carga. Para definir o guindaste, precisamos calcular o <strong>Momento de Carga</strong>, que considera:</p>
+                    <ol class="list-decimal pl-5 space-y-2 mb-4">
+                        <li>O peso da peça;</li>
+                        <li>A distância horizontal (raio) entre o centro do guindaste e o local onde a peça será colocada;</li>
+                        <li>A altura de elevação necessária.</li>
+                    </ol>
+                    <p>Quanto maior a distância, menor a capacidade do guindaste (efeito alavanca). Por isso, sempre solicitamos uma <strong>Visita Técnica</strong> gratuita para avaliar o local e evitar alugar uma máquina subdimensionada (perigoso) ou superdimensionada (custo desnecessário).</p>
+                </div>
+            </details>
+        </div>
+
+        <!-- Seção 2: Segurança e Contratação -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-hermont-blue mb-6 flex items-center gap-2 border-b pb-2 border-gray-200">
+                <i class="ph-fill ph-shield-check text-hermont-red"></i> Segurança e Contratação
+            </h2>
+
+            <!-- Pergunta 3 -->
+            <details class="bg-white border border-gray-200 rounded-lg mb-4 shadow-sm group">
+                <summary class="flex justify-between items-center p-6 cursor-pointer bg-white rounded-lg group-open:bg-gray-50 transition font-bold text-lg text-gray-800">
+                    O que é Plano de Rigging e quando ele é obrigatório?
+                    <span class="text-hermont-red group-open:rotate-180 transition transform"><i class="ph-bold ph-caret-down"></i></span>
+                </summary>
+                <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-4">
+                    <p class="mb-3">O <strong>Plano de Rigging</strong> é um estudo detalhado e planejado da movimentação da carga. Ele simula toda a operação no computador antes de ser executada.</p>
+                    <p class="mb-3">Ele é essencial (e muitas vezes obrigatório pela NR-12) para:</p>
+                    <ul class="list-disc pl-5 space-y-1 mb-4">
+                        <li>Içamentos críticos (cargas muito pesadas ou complexas);</li>
+                        <li>Operações com dois guindastes simultâneos;</li>
+                        <li>Áreas com interferências (fios de alta tensão, tubulações).</li>
+                    </ul>
+                    <p class="text-sm bg-blue-50 p-3 rounded border-l-4 border-hermont-blue">
+                        Saiba mais sobre as exigências legais na nossa página de <a href="recursos.html" class="text-hermont-blue underline font-bold">Legislação e Normas (NRs)</a>.
+                    </p>
+                </div>
+            </details>
+
+            <!-- Pergunta 4 -->
+            <details class="bg-white border border-gray-200 rounded-lg mb-4 shadow-sm group">
+                <summary class="flex justify-between items-center p-6 cursor-pointer bg-white rounded-lg group-open:bg-gray-50 transition font-bold text-lg text-gray-800">
+                    Quais documentos a Hermont fornece para entrada em obras industriais?
+                    <span class="text-hermont-red group-open:rotate-180 transition transform"><i class="ph-bold ph-caret-down"></i></span>
+                </summary>
+                <div class="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-4">
+                    <p class="mb-4">Atendemos aos mais rigorosos padrões de segurança (compliance) de grandes mineradoras e construtoras do Maranhão. Fornecemos:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Laudos de inspeção dos equipamentos (Cabos, Ganchos, Hidráulica);</li>
+                        <li>ART (Anotação de Responsabilidade Técnica) dos equipamentos;</li>
+                        <li>Certificados de treinamento dos operadores (MOPP, Direção Defensiva, NR-11, NR-12, NR-35);</li>
+                        <li>ASO e documentação trabalhista em dia.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <!-- Banner de Conversão -->
+        <div class="bg-hermont-blue text-white rounded-xl p-8 md:p-12 text-center shadow-xl">
+            <h3 class="text-2xl font-bold mb-4">Ainda tem dúvidas sobre sua operação?</h3>
+            <p class="mb-8 text-blue-100">Nossa equipe técnica está pronta para avaliar seu projeto sem compromisso.</p>
+            <a href="https://wa.me/5598984096534?text=Olá, li as Perguntas Frequentes e gostaria de tirar uma dúvida." target="_blank" class="inline-flex items-center gap-2 bg-hermont-red hover:bg-white hover:text-hermont-red text-white px-8 py-4 rounded-full font-bold transition shadow-lg text-lg">
+                <i class="ph-fill ph-whatsapp-logo"></i> Falar com Técnico Agora
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm mt-auto">
+        <div class="container mx-auto px-4">
+            <p class="mb-2">Hermont Transportes | (98) 98409-6534 | hermont@hermont.com.br</p>
+            <p>&copy; 2025 Hermont Transportes.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

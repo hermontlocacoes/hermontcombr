@@ -4,49 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hermont - Locação de Guindastes e Munck em São Luís, MA</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Locação de Guindastes, Caminhão Munck e Transportes Pesados em São Luís - MA. Mais de 25 anos de experiência. Atendimento 24h. Frota revisada e certificada.">
-    <meta name="keywords" content="Aluguel de Guindaste São Luís, Munck Maranhão, Içamento de Cargas, Hermont Transportes, Guindaste Porto do Itaqui">
-    <meta name="author" content="Hermont">
-    <meta property="og:title" content="Hermont - Soluções em Içamento e Transportes">
-    <meta property="og:description" content="Segurança e tradição em locação de guindastes e munck no Maranhão.">
-    <meta property="og:type" content="website">
-
-    <!-- Tailwind CSS (Via CDN para funcionamento imediato em arquivo único) -->
+    <meta name="description" content="Locação de Guindastes, Caminhão Munck e Transportes Pesados em São Luís - MA. Contato: (98) 98409-6534. Mais de 25 anos de experiência.">
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Configuração de Cores da Marca -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         hermont: {
-                            blue: '#003399', /* Azul Institucional forte - Ajuste conforme tom exato */
-                            dark: '#002266', /* Azul mais escuro para hover */
-                            red: '#cc0000',  /* Vermelho Vibrante para CTAs */
+                            blue: '#003399',
+                            dark: '#002266',
+                            red: '#cc0000',
                             redhover: '#990000',
                             gray: '#f3f4f6'
                         }
                     },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
                 }
             }
         }
     </script>
-
-    <!-- Fontes e Ícones -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
     <style>
         body { font-family: 'Inter', sans-serif; }
-        /* Efeito de Parallax suave no Hero */
         .hero-bg {
-            /* Usando uma das fotos aéreas de drone para o fundo do topo - Impacto visual imediato */
             background-image: linear-gradient(rgba(0, 51, 153, 0.75), rgba(0, 34, 102, 0.85)), url('dji_fly_20241116_114122_71_1731768666611_photo_optimized.jpg');
             background-attachment: fixed;
             background-position: center;
@@ -56,50 +38,52 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header / Navbar -->
+    <!-- Header -->
     <header class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- Logo Oficial -->
             <a href="#" class="flex items-center gap-2">
-                <!-- Substituído pelo arquivo da Logo enviado -->
                 <img src="Hermont.png" alt="Hermont Logo" class="h-12 md:h-14 w-auto object-contain">
             </a>
 
-            <!-- Menu Desktop -->
-            <nav class="hidden md:flex gap-8 font-medium text-gray-700">
+            <nav class="hidden lg:flex gap-6 font-medium text-gray-700 text-sm xl:text-base items-center">
                 <a href="#home" class="hover:text-hermont-red transition">Início</a>
                 <a href="#sobre" class="hover:text-hermont-red transition">A Empresa</a>
                 <a href="#frota" class="hover:text-hermont-red transition">Nossa Frota</a>
+                <a href="recursos.html" class="text-hermont-blue hover:text-hermont-red transition flex items-center gap-1"><i class="ph-bold ph-link"></i> Links Úteis</a>
+                <!-- Link FAQ Adicionado -->
+                <a href="faq.html" class="text-hermont-blue hover:text-hermont-red transition flex items-center gap-1 border border-blue-100 px-3 py-1 rounded-full hover:bg-blue-50"><i class="ph-bold ph-question"></i> Dúvidas (FAQ)</a>
                 <a href="#contato" class="hover:text-hermont-red transition">Contato</a>
             </nav>
 
-            <!-- Botão CTA Header -->
-            <a href="https://wa.me/5598984096534" target="_blank" class="hidden md:flex items-center gap-2 bg-hermont-red hover:bg-hermont-redhover text-white px-5 py-2 rounded-full font-bold transition shadow-lg animate-pulse">
-                <i class="ph-fill ph-whatsapp-logo text-xl"></i>
-                Orçamento Rápido
-            </a>
-
-            <!-- Menu Mobile Button -->
-            <button id="mobile-menu-btn" class="md:hidden text-hermont-blue text-3xl">
-                <i class="ph ph-list"></i>
-            </button>
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/5598984096534" target="_blank" class="hidden md:flex items-center gap-2 bg-hermont-red hover:bg-hermont-redhover text-white px-5 py-2 rounded-full font-bold transition shadow-lg animate-pulse">
+                    <i class="ph-fill ph-whatsapp-logo text-xl"></i>
+                    Orçamento
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden text-hermont-blue text-3xl">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
         </div>
 
-        <!-- Menu Mobile (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-4 shadow-lg">
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 p-4 shadow-lg">
             <div class="flex flex-col gap-4">
-                <a href="#home" class="block text-gray-700 font-medium">Início</a>
-                <a href="#sobre" class="block text-gray-700 font-medium">A Empresa</a>
-                <a href="#frota" class="block text-gray-700 font-medium">Nossa Frota</a>
+                <a href="#home" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Início</a>
+                <a href="#sobre" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">A Empresa</a>
+                <a href="#frota" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Nossa Frota</a>
+                <a href="recursos.html" class="block text-hermont-blue font-medium border-b border-gray-100 pb-2">Legislação e Links Úteis</a>
+                <!-- Link FAQ Mobile -->
+                <a href="faq.html" class="block text-hermont-blue font-medium border-b border-gray-100 pb-2">Dúvidas Frequentes (FAQ)</a>
                 <a href="#contato" class="block text-gray-700 font-medium">Contato</a>
-                <a href="https://wa.me/5598984096534" class="bg-hermont-red text-center text-white py-2 rounded font-bold">
-                    Chamar no WhatsApp
+                <a href="https://wa.me/5598984096534" class="bg-hermont-red text-center text-white py-2 rounded font-bold mt-2">
+                    WhatsApp (98) 98409-6534
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section id="home" class="hero-bg h-screen flex items-center justify-center pt-16">
         <div class="container mx-auto px-4 text-center text-white">
             <span class="bg-hermont-red text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block shadow-lg">Atendemos todo o Maranhão</span>
@@ -125,38 +109,30 @@
     <section class="py-16 bg-white relative -mt-10 z-10 container mx-auto px-4 rounded-xl shadow-lg border-b-4 border-hermont-red">
         <div class="grid md:grid-cols-3 gap-8 text-center">
             <div class="p-4">
-                <div class="w-16 h-16 bg-blue-100 text-hermont-blue rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
-                    <i class="ph-fill ph-certificate"></i>
-                </div>
+                <div class="w-16 h-16 bg-blue-100 text-hermont-blue rounded-full flex items-center justify-center mx-auto mb-4 text-3xl"><i class="ph-fill ph-certificate"></i></div>
                 <h3 class="text-xl font-bold mb-2 text-hermont-blue">Frota Certificada</h3>
-                <p class="text-gray-600">Equipamentos com manutenção rigorosa e laudos em dia para entrar em qualquer indústria.</p>
+                <p class="text-gray-600">Equipamentos com manutenção rigorosa e laudos em dia.</p>
             </div>
             <div class="p-4 border-l-0 md:border-l border-gray-100">
-                <div class="w-16 h-16 bg-blue-100 text-hermont-blue rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
-                    <i class="ph-fill ph-clock-countdown"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2 text-hermont-blue">Agilidade no Atendimento</h3>
-                <p class="text-gray-600">Entendemos a urgência da sua obra. Resposta rápida e pontualidade na locação.</p>
+                <div class="w-16 h-16 bg-blue-100 text-hermont-blue rounded-full flex items-center justify-center mx-auto mb-4 text-3xl"><i class="ph-fill ph-clock-countdown"></i></div>
+                <h3 class="text-xl font-bold mb-2 text-hermont-blue">Agilidade</h3>
+                <p class="text-gray-600">Resposta rápida e pontualidade na locação.</p>
             </div>
             <div class="p-4 border-l-0 md:border-l border-gray-100">
-                <div class="w-16 h-16 bg-blue-100 text-hermont-blue rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
-                    <i class="ph-fill ph-hard-hat"></i>
-                </div>
+                <div class="w-16 h-16 bg-blue-100 text-hermont-blue rounded-full flex items-center justify-center mx-auto mb-4 text-3xl"><i class="ph-fill ph-hard-hat"></i></div>
                 <h3 class="text-xl font-bold mb-2 text-hermont-blue">Operadores Qualificados</h3>
-                <p class="text-gray-600">Equipe treinada e experiente para operações complexas de içamento e remoção.</p>
+                <p class="text-gray-600">Equipe treinada para operações complexas.</p>
             </div>
         </div>
     </section>
 
-    <!-- Sobre Nós -->
+    <!-- Sobre -->
     <section id="sobre" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="relative group">
-                    <!-- Foto da Sede/Pátio (Home.jpg) para mostrar estrutura física -->
                     <div class="absolute inset-0 bg-hermont-blue rounded-lg opacity-0 group-hover:opacity-10 transition duration-500"></div>
-                    <img src="Home.png" alt="Sede Hermont" class="rounded-lg shadow-2xl w-full object-cover h-96 transform group-hover:scale-[1.01] transition duration-500">
-                    
+                    <img src="Home.jpg" alt="Sede Hermont" class="rounded-lg shadow-2xl w-full object-cover h-96 transform group-hover:scale-[1.01] transition duration-500">
                     <div class="absolute -bottom-6 -right-6 bg-hermont-blue text-white p-6 rounded-lg shadow-xl hidden md:block border-4 border-white">
                         <p class="text-4xl font-bold">25+</p>
                         <p class="text-sm uppercase tracking-widest">Anos de História</p>
@@ -166,10 +142,7 @@
                     <span class="text-hermont-red font-bold uppercase tracking-wider text-sm">Nossa História</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 mt-2">Tradição que levanta o desenvolvimento do Maranhão</h2>
                     <p class="text-gray-600 mb-4 leading-relaxed">
-                        Fundada com base na força de trabalho e integridade, a <strong>Hermont</strong> nasceu do sonho do Sr. Hermes Luís e da Sra. Maria Euridice. O que começou como um projeto familiar, hoje se consolida como referência em transportes pesados e locação de guindastes.
-                    </p>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Nossa missão vai além de alugar máquinas; entregamos soluções seguras para engenharia civil, montagens industriais e projetos de infraestrutura.
+                        Fundada com base na força de trabalho e integridade, a <strong>Hermont</strong> nasceu do sonho do Sr. Hermes Luís e da Sra. Maria Euridice.
                     </p>
                     <div class="flex items-center gap-4 border-t border-gray-200 pt-6">
                         <div>
@@ -187,60 +160,40 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-hermont-blue mb-4">Nossa Frota</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Equipamentos modernos e diversificados para atender desde pequenas cargas até grandes estruturas industriais.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Equipamentos modernos e diversificados.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1: Munck -->
+                <!-- Munck -->
                 <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
                     <div class="h-56 overflow-hidden bg-gray-200 relative">
-                        <!-- Foto do Caminhão Munck Real -->
-                        <img src="Caminhão.jpg" alt="Caminhão Munck Hermont" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="Caminhão.jpg" alt="Caminhão Munck" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-hermont-blue mb-2">Caminhão Munck</h3>
-                        <p class="text-gray-600 text-sm mb-4">Ideal para cargas médias, transporte de postes, containers e maquinário.</p>
-                        <ul class="text-sm text-gray-500 space-y-2 mb-6">
-                            <li class="flex items-center gap-2"><i class="ph-fill ph-check text-hermont-red"></i> Capacidade variada</li>
-                            <li class="flex items-center gap-2"><i class="ph-fill ph-check text-hermont-red"></i> Içamento preciso</li>
-                        </ul>
                         <a href="https://wa.me/5598984096534?text=Olá, gostaria de um orçamento para Munck." class="block text-center border-2 border-hermont-blue text-hermont-blue hover:bg-hermont-blue hover:text-white font-bold py-2 rounded transition">Solicitar Orçamento</a>
                     </div>
                 </div>
-
-                <!-- Card 2: Guindastes -->
+                <!-- Guindaste -->
                 <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
                     <div class="h-56 overflow-hidden bg-gray-200 relative">
-                        <!-- Foto Aérea/Drone focada nos equipamentos -->
-                        <img src="guindaste.jpg" alt="Guindaste Rodoviário Hermont" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="dji_fly_20241116_121126_142_1731769896410_photo_optimized-1.jpg" alt="Guindaste" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-hermont-blue mb-2">Guindastes Rodoviários</h3>
-                        <p class="text-gray-600 text-sm mb-4">Alta capacidade para grandes alturas e montagens industriais complexas.</p>
-                        <ul class="text-sm text-gray-500 space-y-2 mb-6">
-                            <li class="flex items-center gap-2"><i class="ph-fill ph-check text-hermont-red"></i> Grandes tonelagens</li>
-                            <li class="flex items-center gap-2"><i class="ph-fill ph-check text-hermont-red"></i> Alcance estendido</li>
-                        </ul>
                         <a href="https://wa.me/5598984096534?text=Olá, gostaria de um orçamento para Guindaste." class="block text-center border-2 border-hermont-blue text-hermont-blue hover:bg-hermont-blue hover:text-white font-bold py-2 rounded transition">Solicitar Orçamento</a>
                     </div>
                 </div>
-
-                <!-- Card 3: Transporte/Estrutura -->
+                <!-- Logistica -->
                 <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
                     <div class="h-56 overflow-hidden bg-gray-200 relative">
-                        <!-- Outra foto aérea mostrando a estrutura/pátio -->
-                        <img src="fachada.jpg" alt="Transporte e Logística Hermont" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="dji_fly_20241116_113504_64_1731774617027_photo_optimized.jpg" alt="Transporte" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-hermont-blue mb-2">Logística e Projetos</h3>
-                        <p class="text-gray-600 text-sm mb-4">Estrutura completa para planejamento de rigging e movimentação de cargas.</p>
-                        <ul class="text-sm text-gray-500 space-y-2 mb-6">
-                            <li class="flex items-center gap-2"><i class="ph-fill ph-check text-hermont-red"></i> Estudo de Rigging</li>
-                            <li class="flex items-center gap-2"><i class="ph-fill ph-check text-hermont-red"></i> Frota de apoio</li>
-                        </ul>
                         <a href="https://wa.me/5598984096534?text=Olá, gostaria de um orçamento para Transporte." class="block text-center border-2 border-hermont-blue text-hermont-blue hover:bg-hermont-blue hover:text-white font-bold py-2 rounded transition">Solicitar Orçamento</a>
                     </div>
                 </div>
@@ -248,43 +201,25 @@
         </div>
     </section>
 
-    <!-- CTA Chamada -->
-    <section class="py-16 bg-hermont-blue">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-white mb-6">Precisa de uma cotação urgente?</h2>
-            <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">Nossa equipe está pronta para avaliar sua necessidade e oferecer o equipamento ideal pelo melhor custo-benefício.</p>
-            <a href="https://wa.me/5598984096534" target="_blank" class="inline-flex items-center gap-3 bg-hermont-red hover:bg-white hover:text-hermont-red text-white text-lg font-bold px-8 py-4 rounded-full transition shadow-lg">
-                <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
-                Falar com Atendente Agora
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer / Contato -->
+    <!-- Footer -->
     <footer id="contato" class="bg-gray-900 text-white pt-16 pb-8">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-12 mb-12">
-                <!-- Coluna 1 -->
                 <div>
-                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
-                        <!-- Logo no Rodapé também -->
-                        <img src="Hermont.png" alt="Hermont Logo" class="h-10 w-auto opacity-90">
-                    </h3>
-                    <p class="text-gray-400 mb-6">Referência em locação de guindastes e transportes pesados em São Luís e região.</p>
+                    <img src="Hermont.png" alt="Hermont Logo" class="h-10 w-auto opacity-90 mb-6">
+                    <p class="text-gray-400 mb-6">Referência em locação de guindastes e transportes pesados.</p>
                     <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-hermont-red transition"><i class="ph-fill ph-instagram-logo"></i></a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-hermont-red transition"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="https://instagram.com/hermontltda" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-hermont-red transition text-xl">
+                            <i class="ph-fill ph-instagram-logo"></i>
+                        </a>
+                        <a href="https://wa.me/5598984096534" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-hermont-red transition text-xl">
+                            <i class="ph-fill ph-whatsapp-logo"></i>
+                        </a>
                     </div>
                 </div>
-
-                <!-- Coluna 2 -->
                 <div>
                     <h4 class="text-xl font-bold mb-6">Contato</h4>
                     <ul class="space-y-4 text-gray-400">
-                        <li class="flex items-start gap-3">
-                            <i class="ph-fill ph-map-pin text-hermont-red text-xl mt-1"></i>
-                            <span>Av. Principal, 8 - Santa Bárbara<br>São Luís - MA, 65058-180</span>
-                        </li>
                         <li class="flex items-center gap-3">
                             <i class="ph-fill ph-phone text-hermont-red text-xl"></i>
                             <span>(98) 98409-6534</span>
@@ -293,44 +228,33 @@
                             <i class="ph-fill ph-envelope-simple text-hermont-red text-xl"></i>
                             <span>hermont@hermont.com.br</span>
                         </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ph-fill ph-map-pin text-hermont-red text-xl mt-1"></i>
+                            <span>São Luís - MA</span>
+                        </li>
                     </ul>
                 </div>
-
-                <!-- Coluna 3 (Mapa) -->
                 <div>
-                    <h4 class="text-xl font-bold mb-6">Localização</h4>
-                    <div class="w-full h-48 bg-gray-800 rounded-lg overflow-hidden relative">
-                        <!-- Placeholder Map Image - Replace with Google Maps Embed -->
-                        <img src="https://via.placeholder.com/400x300/333/fff?text=Mapa+Google+Maps" alt="Mapa" class="w-full h-full object-cover opacity-50">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <a href="https://maps.google.com" target="_blank" class="bg-white text-gray-900 px-4 py-2 rounded text-sm font-bold shadow hover:bg-gray-100">Abrir no Maps</a>
-                        </div>
-                    </div>
+                    <h4 class="text-xl font-bold mb-6">Acesso Rápido</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="recursos.html" class="hover:text-hermont-red transition flex items-center gap-2"><i class="ph-fill ph-link"></i> Links Úteis e Legislação</a></li>
+                        <!-- Link FAQ Footer -->
+                        <li><a href="faq.html" class="hover:text-hermont-red transition flex items-center gap-2"><i class="ph-fill ph-question"></i> Dúvidas Frequentes (FAQ)</a></li>
+                        <li><a href="#frota" class="hover:text-hermont-red transition">Conheça a Frota</a></li>
+                        <li><a href="#sobre" class="hover:text-hermont-red transition">Sobre a Hermont</a></li>
+                    </ul>
                 </div>
             </div>
-
             <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
                 <p>&copy; 2025 Hermont Transportes. Todos os direitos reservados.</p>
-                <p class="mt-2">Desenvolvido com tecnologia moderna.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Script Menu Mobile -->
     <script>
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
-
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.add('hidden');
-            });
-        });
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
     </script>
 </body>
 </html>
