@@ -26,15 +26,73 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Import markdown parser for nice AI output formatting -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
     <style>
         body { font-family: 'Inter', sans-serif; }
         .hero-bg {
-            background-image: linear-gradient(rgba(0, 51, 153, 0.75), rgba(0, 34, 102, 0.85)), url('dji_fly_20241116_114122_71_1731768666611_photo_optimized.jpg');
+            background-image: linear-gradient(rgba(0, 51, 153, 0.75), rgba(0, 34, 102, 0.85)), url('equipamentos.png');
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
         }
+        /* Loading Animation for AI */
+        .typing-indicator span {
+            animation: blink 1.4s infinite both;
+            height: 8px;
+            width: 8px;
+            background-color: #003399;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 2px;
+        }
+        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes blink { 0% { opacity: 0.2; } 20% { opacity: 1; } 100% { opacity: 0.2; } }
     </style>
+
+    <!-- SCHEMA MARKUP (JSON-LD) - SEO AVANÇADO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Hermont Transportes e Guindastes",
+      "image": "https://www.hermont.com.br/hermont.png",
+      "telephone": "+55-98-98409-6534",
+      "email": "hermont@hermont.com.br",
+      "url": "https://www.hermont.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Distrito Industrial",
+        "addressLocality": "São Luís",
+        "addressRegion": "MA",
+        "postalCode": "65000-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-2.5297",
+        "longitude": "-44.3028"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "07:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$$$",
+      "description": "Locação de Guindastes, Caminhão Munck e Transportes Pesados em São Luís - MA. Mais de 25 anos de experiência no mercado."
+    }
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -42,7 +100,7 @@
     <header class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <a href="#" class="flex items-center gap-2">
-                <img src="Hermont.png" alt="Hermont Logo" class="h-12 md:h-14 w-auto object-contain">
+                <img src="hermont.png" alt="Hermont Logo" class="h-12 md:h-14 w-auto object-contain">
             </a>
 
             <nav class="hidden lg:flex gap-6 font-medium text-gray-700 text-sm xl:text-base items-center">
@@ -50,7 +108,6 @@
                 <a href="#sobre" class="hover:text-hermont-red transition">A Empresa</a>
                 <a href="#frota" class="hover:text-hermont-red transition">Nossa Frota</a>
                 <a href="recursos.html" class="text-hermont-blue hover:text-hermont-red transition flex items-center gap-1"><i class="ph-bold ph-link"></i> Links Úteis</a>
-                <!-- Link FAQ Adicionado -->
                 <a href="faq.html" class="text-hermont-blue hover:text-hermont-red transition flex items-center gap-1 border border-blue-100 px-3 py-1 rounded-full hover:bg-blue-50"><i class="ph-bold ph-question"></i> Dúvidas (FAQ)</a>
                 <a href="#contato" class="hover:text-hermont-red transition">Contato</a>
             </nav>
@@ -67,13 +124,12 @@
         </div>
 
         <!-- Menu Mobile -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 p-4 shadow-lg">
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 p-4 shadow-lg fixed top-16 left-0 right-0 z-40">
             <div class="flex flex-col gap-4">
                 <a href="#home" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Início</a>
                 <a href="#sobre" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">A Empresa</a>
                 <a href="#frota" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Nossa Frota</a>
                 <a href="recursos.html" class="block text-hermont-blue font-medium border-b border-gray-100 pb-2">Legislação e Links Úteis</a>
-                <!-- Link FAQ Mobile -->
                 <a href="faq.html" class="block text-hermont-blue font-medium border-b border-gray-100 pb-2">Dúvidas Frequentes (FAQ)</a>
                 <a href="#contato" class="block text-gray-700 font-medium">Contato</a>
                 <a href="https://wa.me/5598984096534" class="bg-hermont-red text-center text-white py-2 rounded font-bold mt-2">
@@ -105,8 +161,52 @@
         </div>
     </section>
 
+    <!-- AI ASSISTANT SECTION ✨ --
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden" id="consultor-ia">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-10">
+                <span class="inline-flex items-center gap-2 bg-blue-100 text-hermont-blue px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider mb-2">
+                    <i class="ph-fill ph-sparkle text-hermont-red"></i> Nova Tecnologia
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Consultor de Içamento Inteligente</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Não sabe qual máquina escolher? Descreva sua necessidade e nossa Inteligência Artificial indicará a melhor solução.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-blue-100">
+                <div class="p-8">
+                    <label for="userQuery" class="block text-gray-700 font-bold mb-2">O que você precisa transportar ou içar?</label>
+                    <textarea id="userQuery" rows="3" class="w-full border-2 border-gray-200 rounded-lg p-4 focus:outline-none focus:border-hermont-blue transition text-gray-600" placeholder="Ex: Preciso colocar um container de 2 toneladas em cima de um prédio de 3 andares..."></textarea>
+                    
+                    <button onclick="consultAI()" id="aiBtn" class="mt-4 w-full bg-hermont-blue hover:bg-hermont-dark text-white font-bold py-4 rounded-lg transition flex items-center justify-center gap-2 text-lg shadow-lg group">
+                        <span>Analisar com IA</span>
+                        <i class="ph-bold ph-magic-wand group-hover:rotate-12 transition"></i>
+                    </button>
+                </div>
+
+                <!-- Result Area -->
+                <div id="aiResult" class="hidden bg-gray-50 p-8 border-t border-gray-100 animate-fade-in">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl text-hermont-red shadow-sm flex-shrink-0">
+                            <i class="ph-fill ph-robot"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="font-bold text-xl text-hermont-blue mb-2">Recomendação Hermont:</h3>
+                            <div id="aiText" class="prose text-gray-600 mb-6"></div>
+                            
+                            <!-- Dynamic Action Button -->
+                            <a id="whatsappAction" href="#" target="_blank" class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-bold transition shadow-md">
+                                <i class="ph-fill ph-whatsapp-logo text-xl"></i>
+                                Solicitar essa máquina no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Diferenciais -->
-    <section class="py-16 bg-white relative -mt-10 z-10 container mx-auto px-4 rounded-xl shadow-lg border-b-4 border-hermont-red">
+    <section class="py-16 bg-white relative z-10 container mx-auto px-4 rounded-xl shadow-sm border-b-4 border-hermont-red">
         <div class="grid md:grid-cols-3 gap-8 text-center">
             <div class="p-4">
                 <div class="w-16 h-16 bg-blue-100 text-hermont-blue rounded-full flex items-center justify-center mx-auto mb-4 text-3xl"><i class="ph-fill ph-certificate"></i></div>
@@ -132,7 +232,7 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="relative group">
                     <div class="absolute inset-0 bg-hermont-blue rounded-lg opacity-0 group-hover:opacity-10 transition duration-500"></div>
-                    <img src="Home_hermont.png" alt="Sede Hermont" class="rounded-lg shadow-2xl w-full object-cover h-96 transform group-hover:scale-[1.01] transition duration-500">
+                    <img src="equipamentos_hermont.png" alt="Sede Hermont" class="rounded-lg shadow-2xl w-full object-cover h-96 transform group-hover:scale-[1.01] transition duration-500">
                     <div class="absolute -bottom-6 -right-6 bg-hermont-blue text-white p-6 rounded-lg shadow-xl hidden md:block border-4 border-white">
                         <p class="text-4xl font-bold">25+</p>
                         <p class="text-sm uppercase tracking-widest">Anos de História</p>
@@ -167,7 +267,7 @@
                 <!-- Munck -->
                 <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
                     <div class="h-56 overflow-hidden bg-gray-200 relative">
-                        <img src="Caminhão_munck_hermont.jpg" alt="Caminhão Munck" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="caminhao.png" alt="Caminhão Munck" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
@@ -178,7 +278,7 @@
                 <!-- Guindaste -->
                 <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
                     <div class="h-56 overflow-hidden bg-gray-200 relative">
-                        <img src="guindaste_hermont.jpg" alt="Guindaste Hermont" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="guindaste.png" alt="Guindaste" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
@@ -189,7 +289,7 @@
                 <!-- Logistica -->
                 <div class="bg-white border border-gray-100 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition group">
                     <div class="h-56 overflow-hidden bg-gray-200 relative">
-                        <img src="fachada_hermont.jpg" alt="Transporte" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="home.png" alt="Transporte" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60"></div>
                     </div>
                     <div class="p-6">
@@ -206,10 +306,10 @@
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-12 mb-12">
                 <div>
-                    <img src="Hermont.png" alt="Hermont Logo" class="h-10 w-auto opacity-90 mb-6">
+                    <img src="hermont.png" alt="Hermont Logo" class="h-10 w-auto opacity-90 mb-6">
                     <p class="text-gray-400 mb-6">Referência em locação de guindastes e transportes pesados.</p>
                     <div class="flex gap-4">
-                        <a href="https://instagram.com/hermont_ltda" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-hermont-red transition text-xl">
+                        <a href="https://instagram.com/hermontltda" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-hermont-red transition text-xl">
                             <i class="ph-fill ph-instagram-logo"></i>
                         </a>
                         <a href="https://wa.me/5598984096534" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-hermont-red transition text-xl">
@@ -255,6 +355,84 @@
         const btn = document.getElementById('mobile-menu-btn');
         const menu = document.getElementById('mobile-menu');
         btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+
+        // LOGICA IA DO GEMINI (ATUALIZADA)
+        async function consultAI() {
+            const query = document.getElementById('userQuery').value;
+            if (!query) {
+                alert('Por favor, descreva sua necessidade.');
+                return;
+            }
+
+            const aiBtn = document.getElementById('aiBtn');
+            const resultDiv = document.getElementById('aiResult');
+            const resultText = document.getElementById('aiText');
+            
+            // Loading State
+            aiBtn.innerHTML = '<div class="typing-indicator"><span></span><span></span><span></span></div> Analisando...';
+            aiBtn.disabled = true;
+
+            const apiKey = ""; // IMPORTANTE: INSIRA SUA CHAVE DA API GEMINI AQUI PARA FUNCIONAR
+            
+            // Contexto da Frota REAL da Hermont (Sany, Munck)
+            const prompt = `Você é um engenheiro sênior da Hermont Guindastes em São Luís/MA.
+            
+            NOSSA FROTA (SÓ RECOMENDE ISTO):
+            1. Caminhões Munck: Capacidade 12t a 20t (para postes, containers, pequenas cargas).
+            2. Guindastes Rodoviários (Ex: Sany): Capacidade 30t a 100t+ (para grandes alturas, montagens industriais).
+            3. Carretas/Pranchas: Para transporte pesado apenas.
+
+            O usuário precisa: "${query}".
+            
+            Analise tecnicamente. Se a carga for MUITO pesada (ex: 500t) ou fora do escopo, diga que não temos o equipamento.
+            Caso contrário, recomende a melhor opção da nossa frota.
+            
+            Retorne APENAS um JSON válido com este formato:
+            {
+                "recomendacao": "Nome do Equipamento (Munck ou Guindaste)",
+                "explicacao": "Explicação técnica curta e direta.",
+                "mensagem_whatsapp": "Texto curto para o cliente enviar no WhatsApp."
+            }`;
+
+            try {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: prompt }] }],
+                        generationConfig: { responseMimeType: "application/json" }
+                    })
+                });
+
+                if (!response.ok) throw new Error('Falha na conexão com IA ou Chave API ausente');
+
+                const data = await response.json();
+                const analysis = JSON.parse(data.candidates[0].content.parts[0].text);
+
+                // Display Result
+                resultDiv.classList.remove('hidden');
+                resultText.innerHTML = `<strong>Recomendamos: ${analysis.recomendacao}</strong><br>${analysis.explicacao}`;
+                
+                // Update WhatsApp Button
+                const whatsappBtn = document.getElementById('whatsappAction');
+                const encodedMsg = encodeURIComponent(analysis.mensagem_whatsapp);
+                whatsappBtn.href = `https://wa.me/5598984096534?text=${encodedMsg}`;
+
+                // Smooth scroll to result
+                resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+            } catch (error) {
+                console.error(error);
+                if (apiKey === "") {
+                    alert('ERRO: A Chave da API (API Key) não foi configurada no código.');
+                } else {
+                    alert('Ocorreu um erro ao consultar a IA. Tente novamente.');
+                }
+            } finally {
+                aiBtn.innerHTML = '<span>Analisar com IA</span> <i class="ph-bold ph-magic-wand"></i>';
+                aiBtn.disabled = false;
+            }
+        }
     </script>
 </body>
 </html>
