@@ -3,15 +3,39 @@
   <!-- Página Principal -->
   <url>
     <loc>https://www.hermont.com.br/index.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   
+  <!-- Serviço: Locação de Munck -->
+  <url>
+    <loc>https://www.hermont.com.br/locacao-de-munck.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Serviço: Locação de Guindastes -->
+  <url>
+    <loc>https://www.hermont.com.br/locacao-de-guindastes.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Autoridade: Segurança Operacional -->
+  <url>
+    <loc>https://www.hermont.com.br/seguranca.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Dúvidas Frequentes (Conteúdo Rico) -->
   <url>
     <loc>https://www.hermont.com.br/faq.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -19,9 +43,8 @@
   <!-- Recursos e Links Úteis -->
   <url>
     <loc>https://www.hermont.com.br/recursos.html</loc>
-    <lastmod>2025-12-21</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 </urlset>
-

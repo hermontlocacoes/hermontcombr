@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9Z47CCKSC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z9Z47CCKSC');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locação de Caminhão Munck em São Luís, MA | Hermont Transportes</title>
+    <meta name="description" content="Especialistas em locação de Caminhão Munck no Maranhão. Frota com Palfinger MD 45007 e TKA 52700 para içamento e movimentação de carga. Solicite orçamento.">
+    
+    <!-- Ícone do separador do navegador (Favicon) -->
+    <link rel="icon" type="image/webp" href="favicon.webp">
+    <link rel="apple-touch-icon" href="favicon.webp">
+
+    <link rel="preload" as="image" href="caminhao.webp">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hermont: { blue: '#003399', dark: '#002266', red: '#cc0000', redhover: '#990000', gray: '#f3f4f6' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Cabeçalho (Header) -->
+    <header class="bg-white shadow-md z-50 relative">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="hermont.webp" alt="Hermont Logo" class="h-12 w-auto object-contain">
+            </a>
+
+            <!-- Navegação Desktop -->
+            <nav class="hidden lg:flex gap-6 font-medium text-gray-700 text-sm xl:text-base items-center">
+                <a href="index.html" class="hover:text-hermont-red transition">Início</a>
+                <a href="#locacao-de-munck.html" class="text-hermont-red font-bold transition">Munck</a>
+                <a href="locacao-de-guindastes.html" class="hover:text-hermont-red transition">Guindastes</a>
+                <a href="seguranca.html" class="hover:text-hermont-red transition flex items-center gap-1"><i class="ph-bold ph-shield-check"></i> Segurança</a>
+                <a href="recursos.html" class="hover:text-hermont-red transition flex items-center gap-1"><i class="ph-bold ph-link"></i> Recursos</a>
+                <a href="faq.html" class="text-hermont-blue hover:text-hermont-red transition flex items-center gap-1"><i class="ph-bold ph-question"></i> FAQ</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/5598984096534" target="_blank" class="hidden md:flex items-center gap-2 bg-hermont-red hover:bg-hermont-redhover text-white px-5 py-2 rounded-full font-bold transition shadow-lg animate-pulse">
+                    <i class="ph-fill ph-whatsapp-logo text-xl"></i> Orçamento
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden text-hermont-blue text-3xl">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 p-4 shadow-lg fixed top-16 left-0 right-0 z-40 max-h-[80vh] overflow-y-auto">
+            <div class="flex flex-col gap-4">
+                <a href="index.html" class="block text-hermont-red font-bold border-b border-gray-100 pb-2">Início</a>
+                <a href="locacao-de-munck.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Locação de Munck</a>
+                <a href="locacao-de-guindastes.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Locação de Guindastes</a>
+                <a href="seguranca.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Segurança Operacional</a>
+                <a href="recursos.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Legislação e Links Úteis</a>
+                <a href="faq.html" class="block text-hermont-blue font-medium border-b border-gray-100 pb-2">Dúvidas Frequentes (FAQ)</a>
+                <a href="https://wa.me/5598984096534" class="bg-hermont-red text-center text-white py-3 rounded font-bold mt-2">
+                    WhatsApp (98) 98409-6534
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Destaque -->
+    <section class="bg-hermont-blue py-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('caminhao.webp')] bg-cover bg-center mix-blend-multiply"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-blue-200 text-sm mb-4 font-medium tracking-wider uppercase">
+                <a href="index.html" class="hover:text-white">Home</a> &gt; Serviços &gt; <span class="text-white">Caminhão Munck</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Locação de Caminhão Munck em São Luís</h1>
+            <p class="text-xl text-blue-100 max-w-2xl">A nossa frota TKA e Palfinger garante versatilidade, força e precisão para a sua obra.</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-4 py-16 flex-grow">
+        <div class="flex flex-col lg:flex-row gap-12">
+            
+            <div class="lg:w-2/3">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-4 border-hermont-red pb-2 inline-block">A solução ágil para a sua movimentação</h2>
+                
+                <div class="prose prose-lg text-gray-600 mb-10">
+                    <p>O <strong>Caminhão Munck</strong> (ou guindauto articulado) é um equipamento indispensável na engenharia moderna. A sua principal vantagem é a capacidade de realizar o <strong>içamento e o transporte</strong> da carga utilizando o mesmo veículo, otimizando drasticamente o tempo e o custo logístico.</p>
+                </div>
+
+                <h3 class="text-2xl font-bold text-hermont-blue mb-6"><i class="ph-fill ph-truck text-hermont-red"></i> A Nossa Frota de Guindautos</h3>
+                <p class="text-gray-600 mb-6">Dispomos de equipamentos devidamente dimensionados para suportar as exigências logísticas do Maranhão, com manutenção preventiva rigorosa:</p>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-12">
+                    <!-- TKA 52700 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                        <h4 class="font-black text-hermont-blue text-xl mb-3 flex justify-between items-center">
+                            TKA 52700 <span class="bg-blue-100 text-hermont-blue text-xs px-2 py-1 rounded">1 Unidade</span>
+                        </h4>
+                        <ul class="text-sm space-y-2 text-gray-700">
+                            <li class="flex justify-between border-b border-gray-100 pb-1"><span>Capacidade Máx. Horizontal:</span> <strong>11,98 Toneladas</strong></li>
+                            <li class="flex justify-between border-b border-gray-100 pb-1"><span>Comprimento da Lança:</span> <strong>4,4 Metros</strong></li>
+                            <li class="pt-1 text-xs text-gray-500">Ideal para elevações pesadas em raios curtos.</li>
+                        </ul>
+                    </div>
+
+                    <!-- TKA 48700 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                        <h4 class="font-black text-hermont-blue text-xl mb-3 flex justify-between items-center">
+                            TKA 48700 <span class="bg-blue-100 text-hermont-blue text-xs px-2 py-1 rounded">3 Unidades</span>
+                        </h4>
+                        <ul class="text-sm space-y-2 text-gray-700">
+                            <li class="flex justify-between border-b border-gray-100 pb-1"><span>Capacidade Máx. Horizontal:</span> <strong>11,7 Toneladas</strong></li>
+                            <li class="flex justify-between border-b border-gray-100 pb-1"><span>Comprimento da Lança:</span> <strong>3,9 Metros</strong></li>
+                            <li class="pt-1 text-xs text-gray-500">Equipamento altamente versátil para o dia a dia da obra.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Palfinger MD 45007 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition md:col-span-2">
+                        <h4 class="font-black text-hermont-blue text-xl mb-3 flex justify-between items-center">
+                            Palfinger MD 45007 <span class="bg-blue-100 text-hermont-blue text-xs px-2 py-1 rounded">2 Unidades</span>
+                        </h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <ul class="text-sm space-y-2 text-gray-700">
+                                <li class="flex justify-between border-b border-gray-100 pb-1"><span>Capacidade Máx. Horizontal:</span> <strong>10,9 Toneladas</strong></li>
+                                <li class="flex justify-between border-b border-gray-100 pb-1"><span>Comprimento da Lança:</span> <strong>4,18 Metros</strong></li>
+                            </ul>
+                            <div class="text-xs text-gray-500 flex items-center">
+                                Equipamentos da marca líder mundial, garantindo fiabilidade extrema em operações contínuas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dicas de Eficiência -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-200 mb-10">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                        <i class="ph-fill ph-trend-up text-green-600"></i> Como aumentar a eficiência da sua locação
+                    </h3>
+                    <p class="text-gray-600 mb-4">Para garantir o melhor custo-benefício, recomendamos as seguintes boas práticas de planeamento:</p>
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="bg-hermont-blue text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Conheça o Momento de Carga</h4>
+                                <p class="text-sm text-gray-600">Não forneça apenas o peso da carga. Informe a que distância (raio) a peça precisará de ser colocada. A capacidade (ex: 11,98t do TKA) reduz à medida que a lança é esticada.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="bg-hermont-blue text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Prepare o Solo</h4>
+                                <p class="text-sm text-gray-600">Certifique-se de que o trajeto está desobstruído e que o solo tem resistência suficiente para a abertura total das patolas (sapatas de estabilização).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Coluna Lateral de Conversão -->
+            <div class="lg:w-1/3">
+                <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-hermont-red sticky top-24">
+                    <img src="caminhao.webp" alt="Caminhão Munck Hermont operando" class="w-full h-48 object-cover rounded-lg mb-6 shadow-md">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Qual o Munck ideal?</h3>
+                    <p class="text-gray-600 mb-6 text-sm">Fale com os nossos técnicos. Ajudamos a dimensionar se precisa do TKA ou Palfinger, evitando custos adicionais indesejados.</p>
+                    
+                    <a href="https://wa.me/5598984096534?text=Olá, gostaria de um orçamento e dimensionamento para locação de Munck." target="_blank" class="w-full flex items-center justify-center gap-2 bg-hermont-red hover:bg-hermont-redhover text-white py-4 rounded-lg font-bold transition shadow-md mb-4 text-lg">
+                        <i class="ph-fill ph-whatsapp-logo text-2xl"></i> Solicitar Orçamento
+                    </a>
+                    <a href="tel:+5598984096534" class="w-full flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 text-hermont-blue py-3 rounded-lg font-bold transition border border-gray-300">
+                        <i class="ph-fill ph-phone-call"></i> Ligar: (98) 98409-6534
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12 mb-8 text-left">
+                <div>
+                    <img src="hermont.webp" alt="Hermont Logo" class="h-10 w-auto opacity-90 mb-4">
+                    <p class="text-gray-400">Referência em locação de guindastes e transportes pesados.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contato</h4>
+                    <p><i class="ph-fill ph-phone text-hermont-red"></i> (98) 98409-6534</p>
+                    <p><i class="ph-fill ph-envelope-simple text-hermont-red"></i> hermont@hermont.com.br</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Acesso Rápido</h4>
+                    <ul class="space-y-1">
+                        <li><a href="locacao-de-guindastes.html" class="hover:text-hermont-red transition">Guindastes Telescópicos</a></li>
+                        <li><a href="faq.html" class="hover:text-hermont-red transition">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6">
+                <p>&copy; 2025 Hermont Transportes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>

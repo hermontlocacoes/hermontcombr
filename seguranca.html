@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9Z47CCKSC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z9Z47CCKSC');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Operacional e Rigging | Hermont Transportes</title>
+    <meta name="description" content="Conheça os protocolos de segurança da Hermont para a operação de Guindastes e Caminhões Munck. Checklists diários, normas NR-11/NR-12 e responsabilidades técnicas.">
+    
+    <!-- Ícone do separador do navegador (Favicon) -->
+    <link rel="icon" type="image/webp" href="favicon.webp">
+    <link rel="apple-touch-icon" href="favicon.webp">
+
+    <link rel="preload" as="image" href="guindaste.webp">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hermont: { blue: '#003399', dark: '#002266', red: '#cc0000', redhover: '#990000', gray: '#f3f4f6' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Cabeçalho (Header) -->
+    <header class="bg-white shadow-md z-50 relative">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="hermont.webp" alt="Hermont Logo" class="h-12 w-auto object-contain">
+            </a>
+
+            <!-- Navegação Desktop -->
+            <nav class="hidden lg:flex gap-6 font-medium text-gray-700 text-sm xl:text-base items-center">
+                <a href="index.html" class="hover:text-hermont-red transition">Início</a>
+                <a href="locacao-de-munck.html" class="hover:text-hermont-red transition">Munck</a>
+                <a href="locacao-de-guindastes.html" class="hover:text-hermont-red transition">Guindastes</a>
+                <a href="seguranca.html" class="text-hermont-red font-bold transition flex items-center gap-1"><i class="ph-bold ph-shield-check"></i> Segurança</a>
+                <a href="recursos.html" class="hover:text-hermont-red transition flex items-center gap-1"><i class="ph-bold ph-link"></i> Recursos</a>
+                <a href="faq.html" class="text-hermont-blue hover:text-hermont-red transition flex items-center gap-1"><i class="ph-bold ph-question"></i> FAQ</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/5598984096534" target="_blank" class="hidden md:flex items-center gap-2 bg-hermont-red hover:bg-hermont-redhover text-white px-5 py-2 rounded-full font-bold transition shadow-lg">
+                    <i class="ph-fill ph-whatsapp-logo text-xl"></i> Orçamento
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden text-hermont-blue text-3xl">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 p-4 shadow-lg absolute top-full left-0 right-0 z-40">
+            <div class="flex flex-col gap-4">
+                <a href="index.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Início</a>
+                <a href="locacao-de-munck.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Locação de Munck</a>
+                <a href="locacao-de-guindastes.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Locação de Guindastes</a>
+                <a href="seguranca.html" class="block text-hermont-red font-bold border-b border-gray-100 pb-2">Segurança Operacional</a>
+                <a href="recursos.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Legislação e Links Úteis</a>
+                <a href="faq.html" class="block text-hermont-blue font-medium border-b border-gray-100 pb-2">Dúvidas Frequentes (FAQ)</a>
+                <a href="https://wa.me/5598984096534" class="bg-hermont-red text-center text-white py-2 rounded font-bold mt-2">
+                    WhatsApp (98) 98409-6534
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Secção de Destaque -->
+    <section class="bg-hermont-dark py-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('guindaste.webp')] bg-cover bg-center mix-blend-screen"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Segurança Operacional e Protocolos Técnicos</h1>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">A nossa principal carga é a vida. Conheça as diretrizes técnicas baseadas nos fabricantes e nas normas brasileiras.</p>
+        </div>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mx-auto px-4 py-16 flex-grow">
+        <div class="grid lg:grid-cols-3 gap-12">
+            
+            <!-- Conteúdo Técnico (Autoridade) -->
+            <div class="lg:col-span-2 space-y-12">
+                
+                <!-- Secção 1: Inspeção e Checklists -->
+                <section>
+                    <h2 class="text-2xl font-bold text-hermont-blue mb-4 flex items-center gap-2 border-b-2 border-gray-200 pb-2">
+                        <i class="ph-fill ph-clipboard-text text-hermont-red"></i> Inspeção e Manutenção Preventiva
+                    </h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">De acordo com a NR-11 e os padrões dos fabricantes, nenhum equipamento da Hermont entra em operação sem o <strong>Relatório de Inspeção Diária (Checklist)</strong>. Antes de cada acionamento da tomada de força (TDF), os nossos operadores verificam:</p>
+                    <ul class="space-y-3 text-gray-700 bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                        <li class="flex items-start gap-3"><i class="ph-bold ph-check text-green-500 mt-1"></i> <strong>Sistemas Hidráulicos:</strong> Ausência de fugas em mangueiras, cilindros de elevação e extensão.</li>
+                        <li class="flex items-start gap-3"><i class="ph-bold ph-check text-green-500 mt-1"></i> <strong>Estrutura Metálica:</strong> Verificação de fissuras na base, torre, braços e lanças telescópicas.</li>
+                        <li class="flex items-start gap-3"><i class="ph-bold ph-check text-green-500 mt-1"></i> <strong>Acessórios de Amarração:</strong> Inspeção visual de cintas, cabos de aço, manilhas e ganchos (incluindo a trava de segurança obrigatória).</li>
+                        <li class="flex items-start gap-3"><i class="ph-bold ph-check text-green-500 mt-1"></i> <strong>Sistemas de Segurança:</strong> Teste de válvulas de retenção e limitadores de momento de carga.</li>
+                    </ul>
+                </section>
+
+                <!-- Secção 2: Patolamento e Solo -->
+                <section>
+                    <h2 class="text-2xl font-bold text-hermont-blue mb-4 flex items-center gap-2 border-b-2 border-gray-200 pb-2">
+                        <i class="ph-fill ph-warning-circle text-hermont-red"></i> Estabilização (Patolamento) e Condições do Solo
+                    </h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">A falha na estabilização é a principal causa de acidentes no içamento de cargas. Conforme as diretrizes operacionais de equipamentos de grande porte, exigimos estrita obediência aos limites físicos:</p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-5 rounded-lg border-l-4 border-hermont-blue">
+                            <h4 class="font-bold text-hermont-blue mb-2">Apoio no Solo</h4>
+                            <p class="text-sm text-gray-700">As sapatas (patolas) devem ser totalmente estendidas e apoiadas sobre calços de madeira ou dormentes apropriados para dissipar a pressão exercida no solo, evitando afundamentos e tombamento do guindaste.</p>
+                        </div>
+                        <div class="bg-red-50 p-5 rounded-lg border-l-4 border-hermont-red">
+                            <h4 class="font-bold text-hermont-red mb-2">Limites Atmosféricos</h4>
+                            <p class="text-sm text-gray-700">A operação deve ser imediatamente paralisada em condições de ventos fortes, tempestades elétricas ou visibilidade comprometida, conforme indicado nos manuais dos equipamentos Sany e Palfinger.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Secção 3: Responsabilidades -->
+                <section>
+                    <h2 class="text-2xl font-bold text-hermont-blue mb-4 flex items-center gap-2 border-b-2 border-gray-200 pb-2">
+                        <i class="ph-fill ph-users text-hermont-red"></i> Responsabilidades na Operação
+                    </h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">A segurança é um esforço conjunto. Entenda as divisões de responsabilidade durante uma locação com operador:</p>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white rounded-lg shadow-sm border border-gray-200 text-sm">
+                            <thead class="bg-gray-100 text-gray-700 uppercase">
+                                <tr>
+                                    <th class="py-3 px-4 text-left">Responsabilidade Hermont</th>
+                                    <th class="py-3 px-4 text-left">Responsabilidade do Contratante</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-600">
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-3 px-4">Fornecer o equipamento com a manutenção em dia (ART e laudos).</td>
+                                    <td class="py-3 px-4">Isolar e sinalizar a área de operação na obra.</td>
+                                </tr>
+                                <tr class="border-b border-gray-100 bg-gray-50">
+                                    <td class="py-3 px-4">Fornecer operador certificado (MOPP, NR-11, NR-12).</td>
+                                    <td class="py-3 px-4">Fornecer os dados reais de peso e dimensões da carga.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Garantir acessórios de amarração adequados à capacidade solicitada.</td>
+                                    <td class="py-3 px-4">Garantir a resistência do solo para o patolamento.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Coluna Lateral (Sidebar) -->
+            <div class="lg:col-span-1">
+                <div class="bg-white p-6 rounded-xl shadow-xl border-t-4 border-hermont-blue sticky top-24">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Normas e Legislação Vigente</h3>
+                    <p class="text-sm text-gray-600 mb-6">A nossa operação é regida pelas Normas Regulamentadoras (NR) do Ministério do Trabalho. Aceda aos documentos oficiais:</p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li>
+                            <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-11-atualizada-2016.pdf" target="_blank" class="flex items-center gap-3 text-hermont-blue hover:text-hermont-red transition font-medium group">
+                                <i class="ph-fill ph-file-pdf text-2xl group-hover:scale-110 transition"></i>
+                                NR-11 (Movimentação de Materiais)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-12-seguranca-no-trabalho-em-maquinas-e-equipamentos" target="_blank" class="flex items-center gap-3 text-hermont-blue hover:text-hermont-red transition font-medium group">
+                                <i class="ph-fill ph-file-pdf text-2xl group-hover:scale-110 transition"></i>
+                                NR-12 (Segurança em Máquinas)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://siaet.dnit.gov.br/" target="_blank" class="flex items-center gap-3 text-hermont-blue hover:text-hermont-red transition font-medium group">
+                                <i class="ph-fill ph-link text-2xl group-hover:scale-110 transition"></i>
+                                SIAET DNIT (Autorização de Trânsito)
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-200">
+                        <p class="font-bold text-gray-800 mb-2">Precisa de um Plano de Rigging?</p>
+                        <p class="text-xs text-gray-600 mb-4">Evite paragens na sua obra por falta de documentação técnica.</p>
+                        <a href="https://wa.me/5598984096534?text=Preciso de ajuda com a engenharia e plano de rigging." target="_blank" class="block bg-hermont-red text-white py-2 rounded font-bold hover:bg-hermont-redhover transition text-sm">Consultar Engenharia</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-12 mb-8 text-left">
+                <div>
+                    <img src="hermont.webp" alt="Hermont Logo" class="h-10 w-auto opacity-90 mb-4">
+                    <p class="text-gray-400">Referência em locação de guindastes e transportes pesados.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contato</h4>
+                    <p><i class="ph-fill ph-phone text-hermont-red"></i> (98) 98409-6534</p>
+                    <p><i class="ph-fill ph-envelope-simple text-hermont-red"></i> hermont@hermont.com.br</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Acesso Rápido</h4>
+                    <ul class="space-y-1">
+                        <li><a href="locacao-de-munck.html" class="hover:text-hermont-red transition">Caminhão Munck</a></li>
+                        <li><a href="locacao-de-guindastes.html" class="hover:text-hermont-red transition">Guindastes Telescópicos</a></li>
+                        <li><a href="recursos.html" class="hover:text-hermont-red transition">Links Úteis e Legislação</a></li>
+                        <li><a href="faq.html" class="hover:text-hermont-red transition">Dúvidas Frequentes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6">
+                <p>&copy; 2025 Hermont Transportes. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>

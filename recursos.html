@@ -2,19 +2,28 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9Z47CCKSC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z9Z47CCKSC');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links Úteis e Legislação - Hermont Guindastes</title>
-    <meta name="description" content="Acesse normas regulamentadoras (NR11, NR12), links do DNIT, CREA-MA e Porto do Itaqui. Central de recursos para engenharia de movimentação.">
-    
-    <!-- Tailwind CSS -->
+    <meta name="description" content="Central de recursos, normas regulamentadoras (NR-11, NR-12) e links úteis para operações de içamento e transporte no Maranhão.">
+
+    <!-- Ícone do separador do navegador (Favicon) -->
+    <link rel="icon" type="image/webp" href="favicon.webp">
+    <link rel="apple-touch-icon" href="favicon.webp">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        hermont: { blue: '#003399', dark: '#002266', red: '#cc0000', gray: '#f3f4f6' }
-                    },
+                    colors: { hermont: { blue: '#003399', dark: '#002266', red: '#cc0000', gray: '#f3f4f6' } },
                     fontFamily: { sans: ['Inter', 'sans-serif'] }
                 }
             }
@@ -25,89 +34,127 @@
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
-    <!-- Header Simplificado (com botão de voltar) -->
-    <header class="bg-hermont-blue text-white shadow-md">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-2 font-bold hover:text-gray-200 transition">
-                <i class="ph-bold ph-arrow-left"></i> Voltar ao Início
+    <!-- Cabeçalho (Header) -->
+    <header class="bg-white shadow-md z-50 relative">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="hermont.webp" alt="Hermont Logo" class="h-12 w-auto object-contain">
             </a>
-            <img src="Hermont.png" alt="Hermont Logo" class="h-10 bg-white rounded p-1">
+
+            <!-- Navegação Desktop -->
+            <nav class="hidden lg:flex gap-6 font-medium text-gray-700 text-sm xl:text-base items-center">
+                <a href="index.html" class="hover:text-hermont-red transition">Início</a>
+                <a href="locacao-de-munck.html" class="hover:text-hermont-red transition">Munck</a>
+                <a href="locacao-de-guindastes.html" class="hover:text-hermont-red transition">Guindastes</a>
+                <a href="seguranca.html" class="hover:text-hermont-red transition flex items-center gap-1"><i class="ph-bold ph-shield-check"></i> Segurança</a>
+                <a href="recursos.html" class="text-hermont-red font-bold transition flex items-center gap-1"><i class="ph-bold ph-link"></i> Recursos</a>
+                <a href="faq.html" class="hover:text-hermont-red transition flex items-center gap-1"><i class="ph-bold ph-question"></i> FAQ</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/5598984096534" target="_blank" class="hidden md:flex items-center gap-2 bg-hermont-red hover:bg-hermont-redhover text-white px-5 py-2 rounded-full font-bold transition shadow-lg">
+                    <i class="ph-fill ph-whatsapp-logo text-xl"></i> Orçamento
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden text-hermont-blue text-3xl">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 p-4 shadow-lg absolute top-full left-0 right-0 z-40">
+            <div class="flex flex-col gap-4">
+                <a href="index.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Início</a>
+                <a href="locacao-de-munck.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Locação de Munck</a>
+                <a href="locacao-de-guindastes.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Locação de Guindastes</a>
+                <a href="seguranca.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Segurança Operacional</a>
+                <a href="recursos.html" class="block text-hermont-red font-bold border-b border-gray-100 pb-2">Legislação e Links Úteis</a>
+                <a href="faq.html" class="block text-gray-700 font-medium border-b border-gray-100 pb-2">Dúvidas Frequentes (FAQ)</a>
+                <a href="https://wa.me/5598984096534" class="bg-hermont-red text-center text-white py-2 rounded font-bold mt-2">
+                    WhatsApp (98) 98409-6534
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- Título da Página -->
-    <section class="bg-hermont-dark text-white py-12">
+    <!-- Secção de Destaque -->
+    <section class="bg-hermont-dark text-white py-16">
         <div class="container mx-auto px-4 text-center">
-            <h1 class="text-3xl md:text-4xl font-bold mb-4">Central de Recursos e Legislação</h1>
-            <p class="text-blue-100 max-w-2xl mx-auto">Reunimos os principais links, normas e portais úteis para o planejamento da sua operação de içamento e transporte.</p>
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Central de Recursos e Legislação</h1>
+            <p class="text-blue-100 max-w-2xl mx-auto text-lg">Reunimos os principais links e normas para o planeamento seguro da sua operação.</p>
         </div>
     </section>
 
     <!-- Conteúdo Principal -->
-    <main class="container mx-auto px-4 py-12 flex-grow">
+    <main class="container mx-auto px-4 py-12 max-w-5xl flex-grow">
         
-        <!-- Grupo 1: Segurança e Normas -->
+        <!-- Grupo 1: Segurança -->
         <div class="mb-12">
-            <h2 class="text-2xl font-bold text-hermont-blue mb-6 flex items-center gap-2">
-                <i class="ph-fill ph-shield-check text-hermont-red"></i> Segurança e Normas (NRs)
+            <h2 class="text-2xl font-bold text-hermont-blue mb-6 flex items-center gap-2 border-b border-gray-200 pb-2">
+                <i class="ph-fill ph-file-pdf text-hermont-red"></i> Segurança e Normas (NRs)
             </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Card -->
-                <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-11-atualizada-2016.pdf" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
-                    <div class="text-hermont-red font-bold text-lg mb-2 group-hover:underline">NR 11 - Gov.br <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
-                    <p class="text-gray-600 text-sm">Norma Regulamentadora para Transporte, Movimentação, Armazenagem e Manuseio de Materiais.</p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-11-atualizada-2016.pdf" target="_blank" class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="text-hermont-blue font-bold text-xl mb-2 group-hover:text-hermont-red transition">NR 11 <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
+                    <p class="text-gray-600 text-sm">Transporte, Movimentação, Armazenagem e Manuseio de Materiais.</p>
                 </a>
-                <!-- Card -->
-                <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-12-seguranca-no-trabalho-em-maquinas-e-equipamentos" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
-                    <div class="text-hermont-red font-bold text-lg mb-2 group-hover:underline">NR 12 - Gov.br <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
-                    <p class="text-gray-600 text-sm">Segurança no Trabalho em Máquinas e Equipamentos. Essencial para operações com guindastes.</p>
+                <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-12-seguranca-no-trabalho-em-maquinas-e-equipamentos" target="_blank" class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="text-hermont-blue font-bold text-xl mb-2 group-hover:text-hermont-red transition">NR 12 <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
+                    <p class="text-gray-600 text-sm">Segurança no Trabalho em Máquinas e Equipamentos.</p>
                 </a>
             </div>
         </div>
-
-        <!-- Grupo 2: Logística e Autorizações -->
+        
+        <!-- Grupo 2: Órgãos -->
         <div class="mb-12">
-            <h2 class="text-2xl font-bold text-hermont-blue mb-6 flex items-center gap-2">
-                <i class="ph-fill ph-truck text-hermont-red"></i> Logística e Trânsito (AET)
-            </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="https://siaet.dnit.gov.br/" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
-                    <div class="text-hermont-blue font-bold text-lg mb-2 group-hover:underline">SIAET - DNIT <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
-                    <p class="text-gray-600 text-sm">Sistema de Gerenciamento de Autorização Especial de Trânsito para cargas indivisíveis e excedentes.</p>
+             <h2 class="text-2xl font-bold text-hermont-blue mb-6 flex items-center gap-2 border-b border-gray-200 pb-2">
+                <i class="ph-fill ph-buildings text-hermont-red"></i> Órgãos e Autorizações
+             </h2>
+             <div class="grid md:grid-cols-2 gap-6">
+                <a href="https://siaet.dnit.gov.br/" target="_blank" class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="text-hermont-blue font-bold text-xl mb-2 group-hover:text-hermont-red transition">SIAET - DNIT <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
+                    <p class="text-gray-600 text-sm">Sistema de Autorização Especial de Trânsito para movimentação de cargas complexas.</p>
                 </a>
-                 <a href="https://www.portodoitaqui.ma.gov.br/" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
-                    <div class="text-hermont-blue font-bold text-lg mb-2 group-hover:underline">Porto do Itaqui (EMAP) <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
-                    <p class="text-gray-600 text-sm">Portal oficial do Porto do Itaqui. Informações sobre atracações e normas portuárias.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Grupo 3: Institucional Regional -->
-        <div class="mb-12">
-            <h2 class="text-2xl font-bold text-hermont-blue mb-6 flex items-center gap-2">
-                <i class="ph-fill ph-buildings text-hermont-red"></i> Órgãos e Associações
-            </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a href="https://www.creama.org.br/" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
-                    <div class="text-gray-800 font-bold text-lg mb-2 group-hover:underline">CREA - MA <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
+                <a href="https://www.creama.org.br/" target="_blank" class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition group">
+                    <div class="text-hermont-blue font-bold text-xl mb-2 group-hover:text-hermont-red transition">CREA - MA <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
                     <p class="text-gray-600 text-sm">Conselho Regional de Engenharia e Agronomia do Maranhão.</p>
                 </a>
-                <a href="https://www.sinduscon-ma.com.br/" target="_blank" class="bg-white p-6 rounded-lg shadow border border-gray-100 hover:shadow-lg hover:border-hermont-blue transition group">
-                    <div class="text-gray-800 font-bold text-lg mb-2 group-hover:underline">SINDUSCON - MA <i class="ph-bold ph-arrow-up-right inline text-sm ml-1"></i></div>
-                    <p class="text-gray-600 text-sm">Sindicato da Indústria da Construção Civil do Estado do Maranhão.</p>
-                </a>
-            </div>
+             </div>
         </div>
-
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+    <!-- Rodapé -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm mt-auto">
         <div class="container mx-auto px-4">
-            <p>Os links externos são de responsabilidade de seus respectivos proprietários.</p>
-            <p class="mt-2">&copy; 2025 Hermont Transportes.</p>
+            <div class="grid md:grid-cols-3 gap-12 mb-8 text-left">
+                <div>
+                    <img src="hermont.webp" alt="Hermont Logo" class="h-10 w-auto opacity-90 mb-4">
+                    <p class="text-gray-400">Referência em locação de guindastes e transportes pesados.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contacto</h4>
+                    <p><i class="ph-fill ph-phone text-hermont-red"></i> (98) 98409-6534</p>
+                    <p><i class="ph-fill ph-envelope-simple text-hermont-red"></i> hermont@hermont.com.br</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Acesso Rápido</h4>
+                    <ul class="space-y-1">
+                        <li><a href="locacao-de-munck.html" class="hover:text-hermont-red transition">Caminhão Munck</a></li>
+                        <li><a href="locacao-de-guindastes.html" class="hover:text-hermont-red transition">Guindastes Telescópicos</a></li>
+                        <li><a href="seguranca.html" class="hover:text-hermont-red transition">Segurança Operacional</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 text-center">
+                <p>&copy; 2025 Hermont Transportes. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+    </script>
 </body>
 </html>
